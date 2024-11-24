@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Simplify</title>
+  </head>
+  <body>
+    <h1>We making it out with this one</h1>
+    <div>
+      <%= form_with model: Recipe, url: recipes_path, method: :post, local: true do |f| %>
+        <div>
+          <%= f.label :url %><br>
+          <%= f.text_field :url %>
+        </div>
+
+        <div>
+          <%= f.submit "check this shit out" %>
+        </div>
+      <% end %>
+    </div>
+  </body>
+</html>
