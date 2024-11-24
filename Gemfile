@@ -19,7 +19,7 @@ gem "thruster", require: false
 
 group :development, :test do
   gem "rubocop-rails-omakase", require: false
-  gem "rspec-rails", "~> 6.1.0"
+  gem "rspec-rails", "~> 7.1.0"
   gem 'pry-rails'
 end
 
