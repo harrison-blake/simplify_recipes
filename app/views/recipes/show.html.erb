@@ -3,3 +3,19 @@
 <div>
   <p><%= @recipe.url %></p>
 </div>
+<div>
+  <p><%= @recipe.author %></p>
+</div>
+<div>
+  <p><%= @recipe.recipe_name %></p>
+</div>
+<div>
+  <% @ingredients.each do |ingredient| %>
+    <p><%= ingredient %></p>
+  <% end %>
+</div>
+<div>
+  <% @instructions.each do |instruction| %>
+    <p><%= instruction %></p>
+  <% end %>
+</div>

@@ -7,24 +7,33 @@ class RecipesController < ApplicationController
     recipe = Recipe.new(url: params[:recipe][:url])
     recipe.save
 
-    uri = URI.parse("http://host.docker.internal:5000/api/simplify_recipe")
+    uri = URI.parse("http://host.docker.internal:8000/api/simplify")
     response = Net::HTTP.post(
       uri, 
-      { url: "https://cooking.nytimes.com/recipes/1025014-cheesy-green-chile-bean-bake" }.to_json, 
+      { url: params['recipe']['url'] }.to_json, 
       "Content-Type" => "application/json"
     )
 
-    parse_response(response)
+    parse_response(response, recipe)
     
     redirect_to recipe_path(recipe.id)
   end
 
   def show
     @recipe = Recipe.find(params['id'])
+    @instructions = JSON.parse(@recipe['instructions'])
+    @ingredients = JSON.parse(@recipe['ingredients'])
   end
 
-  def parse_response(response)
-    binding.pry
-    JSON.parse(JSON.parse(response.body)['message'])
+  def parse_response(response, recipe)
+    message = JSON.parse(response.body)['message']
+    message = JSON.parse(message)
+
+    recipe.author = message['author']
+    recipe.recipe_name = message['recipe_name']
+    recipe.ingredients = message['ingredients']
+    recipe.instructions = message['instructions']
+
+    recipe.save
   end
 end
