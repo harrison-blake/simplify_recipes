@@ -7,13 +7,7 @@ class RecipesController < ApplicationController
     recipe = Recipe.new(url: params[:recipe][:url])
     recipe.save
 
-    uri = URI.parse("http://host.docker.internal:8000/api/simplify")
-    response = Net::HTTP.post(
-      uri, 
-      { url: params['recipe']['url'] }.to_json, 
-      "Content-Type" => "application/json"
-    )
-
+    response = RecipeService.get_recipe(params['recipe']['url'])
     parse_response(response, recipe)
     
     redirect_to recipe_path(recipe.id)
@@ -25,14 +19,17 @@ class RecipesController < ApplicationController
     @ingredients = JSON.parse(@recipe['ingredients'])
   end
 
+  private
   def parse_response(response, recipe)
-    message = JSON.parse(response.body)['message']
-    message = JSON.parse(message)
+    response = JSON.parse(response.body)
+    simplified_markdown = JSON.parse(response['converted'])
+    # original_markdown = JSON.parse(response['original'])
 
-    recipe.author = message['author']
-    recipe.recipe_name = message['recipe_name']
-    recipe.ingredients = message['ingredients']
-    recipe.instructions = message['instructions']
+    recipe.markdown = response['original']
+    recipe.author = simplified_markdown['author']
+    recipe.recipe_name = simplified_markdown['recipe_name']
+    recipe.ingredients = simplified_markdown['ingredients']
+    recipe.instructions = simplified_markdown['instructions']
 
     recipe.save
   end
