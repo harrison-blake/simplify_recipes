@@ -7,6 +7,6 @@ class RecipeService
       "Content-Type" => "application/json"
     )
 
-    response
+    JSON.parse(response.body)
   end
 end
