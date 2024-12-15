@@ -8,3 +8,17 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+/* center content, max width */
+body {
+  margin: 0 auto;
+  max-width: 500px;
+  display: block;
+}
+
+/* a new default font */
+html,
+body {
+  font-family: sans-serif;
+  background-color: rgb(247, 250, 252);
+}
