@@ -16,8 +16,8 @@ RSpec.describe RecipeService do
   end
 
   describe '200 OK response (happy path)' do
-    it 'should return data in the correct format' do 
+    it 'should return data in the correct format' do
       expect(data).to be_a(Hash)
     end
   end
-end 
+end

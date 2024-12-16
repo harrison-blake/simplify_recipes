@@ -20,10 +20,10 @@ gem "thruster", require: false
 group :development, :test do
   gem "rubocop-rails-omakase", require: false
   gem "rspec-rails", "~> 6.1.0"
-  gem 'pry-rails'
-  gem 'webmock'
-  gem 'vcr'
-  gem 'capybara'
+  gem "pry-rails"
+  gem "webmock"
+  gem "vcr"
+  gem "capybara"
 end
 
 group :development do

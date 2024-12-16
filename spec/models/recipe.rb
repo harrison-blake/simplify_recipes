@@ -1,15 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe Recipe, type: :model do
-  subject { 
-    Recipe.new(url: "https://someurl.com", 
+  subject {
+    Recipe.new(url: "https://someurl.com",
               author: "author",
-              recipe_name: "name", 
-              ingredients: "wow", 
-              instructions: "yea") 
+              recipe_name: "name",
+              ingredients: "wow",
+              instructions: "yea")
     }
 
-  it "is valid with valid attributes" do   
+  it "is valid with valid attributes" do
     expect(subject).to be_valid
   end
 
