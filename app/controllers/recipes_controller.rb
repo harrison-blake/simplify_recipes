@@ -21,7 +21,6 @@ class RecipesController < ApplicationController
 
   private
   def parse_response(response, recipe)
-    # binding.pry
     simplified_markdown = JSON.parse(response['converted'])
 
     recipe.markdown = response['original']

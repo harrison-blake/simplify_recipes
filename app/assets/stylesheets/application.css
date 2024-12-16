@@ -1,24 +1,30 @@
-/*
- * This is a manifest file that'll be compiled into application.css.
- *
- * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
- * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
- * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
- * depending on specificity.
- *
- * Consider organizing styles into separate files for maintainability.
- */
-
-/* center content, max width */
+/* center content, set max width */
 body {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 1000px;
   display: block;
 }
 
-/* a new default font */
+/* a new default font and bg color */
 html,
 body {
-  font-family: sans-serif;
-  background-color: rgb(247, 250, 252);
+  font-family: "Comic Sans MS", sans-serif;
+  background-color: rgb(213, 222, 230);
+}
+
+.center {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.column {
+  flex: 1; /* Each column takes equal space */
+  margin: 0 10px; /* Optional: Add some margin between columns */
+}
+
+.col-head {
+  text-align: center;
 }
