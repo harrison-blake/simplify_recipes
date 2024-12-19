@@ -86,7 +86,7 @@ Rails.application.configure do
   # config.hosts << "simplify-web-9147d8b72c6d.herokuapp.com"
   config.hosts = [
     "simplify-web-9147d8b72c6d.herokuapp.com",
-   " /.*\.herokuapp\.com/"
+    /.*\.herokuapp\.com/
   ]
   #
   # Skip DNS rebinding protection for the default health check endpoint.
