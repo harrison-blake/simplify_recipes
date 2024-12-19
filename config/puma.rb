@@ -27,8 +27,10 @@
 threads_count = ENV.fetch("RAILS_MAX_THREADS", 2)
 threads threads_count, threads_count
 
+preload_app!
+
 # heroku defualts to prod unless dev is specified
-environment ENV['RACK_ENV'] || 'development'
+environment ENV["RACK_ENV"] || "development"
 
 # Specifies the `port` that Puma will listen on to receive requests; default is 3000.
 port ENV.fetch("PORT", 3000)
