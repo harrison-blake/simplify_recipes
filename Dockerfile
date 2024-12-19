@@ -8,4 +8,4 @@ RUN bundle install
 
 COPY . /usr/src/app/
 
-CMD ["bin/rails", "s", "-b", "0.0.0.0"]
+CMD ["bundle", "exec", "-C". "config/puma.rb"]
