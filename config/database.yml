@@ -16,6 +16,6 @@ test:
 
 production:
   <<: *default
-  username: ENV.fetch('USER')
-  password: ENV.fetch('PASSWORD')
+  username: <%= ENV.fetch('USER') %>
+  password: <%= ENV.fetch('PASSWORD') %>
   database: simplify_prod
