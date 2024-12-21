@@ -3,8 +3,5 @@ setup:
     - plan: heroku-postgresql
       as: DATABASE
 build:
-  config:
-    RAILS_ENV: production
-    RACK_ENV: production
   docker:
     web: Dockerfile
