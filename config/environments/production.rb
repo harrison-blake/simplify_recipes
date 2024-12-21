@@ -85,7 +85,6 @@ Rails.application.configure do
   # ]
   # config.hosts << "simplify-web-9147d8b72c6d.herokuapp.com"
   config.hosts = [
-    "simplify-web-9147d8b72c6d.herokuapp.com",
     /.*\.herokuapp\.com/
   ]
   #
