@@ -1,6 +1,8 @@
 class RecipeService
   def self.get_recipe(url)
-    uri = URI.parse("http://host.docker.internal:8000/api/simplify")
+    API_URL = Rails.application.config.api_endpoint
+    
+    uri = URI.parse(API_URL)
     response = Net::HTTP.post(
       uri,
       { url: url }.to_json,

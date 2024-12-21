@@ -78,6 +78,10 @@ Rails.application.configure do
   # Only use :id for inspections in production.
   config.active_record.attributes_for_inspect = [ :id ]
 
+  # heroku api endpoint
+  Rails.application.config.api_endpoint = "https://simplify-api-ee9e00466037.herokuapp.com/api/simplify"
+
+
   # Enable DNS rebinding protection and other `Host` header attacks.
   # config.hosts = [
   #   "example.com",     # Allow requests from example.com
