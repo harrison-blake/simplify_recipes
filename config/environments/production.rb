@@ -78,8 +78,9 @@ Rails.application.configure do
   # Only use :id for inspections in production.
   config.active_record.attributes_for_inspect = [ :id ]
 
+  puts "env: #{Rails.env} - we are in production.rb"
   # heroku api endpoint
-  Rails.application.config.api_endpoint = "https://simplify-api-ee9e00466037.herokuapp.com/api/simplify"
+  # Rails.application.config.api_endpoint = "https://simplify-api-ee9e00466037.herokuapp.com/api/simplify"
 
 
   # Enable DNS rebinding protection and other `Host` header attacks.
@@ -91,6 +92,8 @@ Rails.application.configure do
   config.hosts = [
     /.*\.herokuapp\.com/
   ]
+
+
   #
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
