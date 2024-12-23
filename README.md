@@ -1,9 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A web app that takes in a recipe page url, converts it into markdown which is fed into gpt to extract the essential ingredients and cooking instructions.
 
-Things you may want to cover:
+### ⚡Tech Stack
+
+[![Skills](https://skillicons.dev/icons?i=python,flask,rails,ruby,postgres,docker,heroku&perline=3)](https://skillicons.dev)</br>
 
 * Ruby version
 
@@ -20,5 +21,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
