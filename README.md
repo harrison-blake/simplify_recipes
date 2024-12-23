@@ -4,7 +4,7 @@ A web app that takes in a recipe page url, converts it into markdown which is fe
 
 ### ⚡Tech Stack
 
-[![Skills](https://skillicons.dev/icons?i=python,flask,rails,ruby,postgres,docker,heroku&perline=3)](https://skillicons.dev)</br>
+[![Skills](https://skillicons.dev/icons?i=python,flask,rails,ruby,postgres,docker,heroku)](https://skillicons.dev)</br>
 
 * Ruby version
 
