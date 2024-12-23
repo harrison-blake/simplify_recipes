@@ -1,6 +1,6 @@
 # README
 
-A web app that takes in a recipe page url, converts it into markdown which is fed into gpt to extract the essential ingredients and cooking instructions.
+A web app that takes in a recipe page url, calls the [simplify api](https://github.com/harrison-blake/simplify_api) which converts the html of the site to markdown and finally feeds it into gpt to extract the essential ingredients and cooking instructions.
 
 ### ⚡Tech Stack
 
