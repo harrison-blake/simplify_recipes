@@ -31,8 +31,12 @@ jobs:
       - name: Install Dependencies
         run: bundle install
 
-      - name: Run RSpec Tests
+      - name: build schema
         env:
           RAILS_ENV: test
           DATABASE_URL: postgres://postgres:postgres@localhost:5432
-        run: bundle exec rspec
+        run: bin/rails db:setup spec
+
+      - name: run test
+        run: bundle exec rspec spec
+
