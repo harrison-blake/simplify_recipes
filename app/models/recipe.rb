@@ -4,4 +4,6 @@ class Recipe < ApplicationRecord
   validates :recipe_name, presence: true
   validates :ingredients, presence: true
   validates :instructions, presence: true
+
+  # we gotta fix whatever this is
 end
