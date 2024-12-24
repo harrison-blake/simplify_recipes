@@ -3,7 +3,7 @@ name: RSpec Runner
 on:
   pull_request:
     branches:
-      - main  # Adjust to match your target branch for PRs
+      - main 
 
 jobs:
   rspec:
