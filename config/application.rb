@@ -39,5 +39,11 @@ module SimplifyRecipes
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    if Rails.env == "production"
+      Rails.application.config.api_endpoint = "https://simplify-api-ee9e00466037.herokuapp.com/api/simplify"
+    else
+      Rails.application.config.api_endpoint = "http://host.docker.internal:8000/api/simplify"
+    end
   end
 end

@@ -71,6 +71,5 @@ Rails.application.configure do
   # config.generators.apply_rubocop_autocorrect_after_generate!
 
   # local dev api endpoint
-  Rails.application.config.api_endpoint = "http://127.0.0.1:8000/api/simplify"
-  
+  # Rails.application.config.api_endpoint = "http://host.docker.internal:8000/api/simplify"
 end
