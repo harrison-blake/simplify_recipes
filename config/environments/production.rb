@@ -78,7 +78,6 @@ Rails.application.configure do
   # Only use :id for inspections in production.
   config.active_record.attributes_for_inspect = [ :id ]
 
-  puts "env: #{Rails.env} - we are in production.rb"
   # heroku api endpoint
   # Rails.application.config.api_endpoint = "https://simplify-api-ee9e00466037.herokuapp.com/api/simplify"
 
