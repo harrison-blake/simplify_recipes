@@ -36,7 +36,3 @@ jobs:
           RAILS_ENV: test
           DATABASE_URL: postgres://postgres:postgres@localhost:5432
         run: bin/rails db:setup spec
-
-      - name: run test
-        run: bundle exec rspec spec
-
