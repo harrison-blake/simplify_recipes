@@ -1,4 +1,5 @@
 FROM ruby:3.3.6
+
 RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends \
     nodejs
 
