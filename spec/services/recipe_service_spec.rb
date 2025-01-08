@@ -18,8 +18,8 @@ RSpec.describe RecipeService do
   describe '200 OK response (happy path)' do
     it 'should return data in the correct format' do
       expect(data).to be_a(Hash)
-      # expect(data).to have_key(:converted)
-      # expect(data).to have_key(:original)
+      expect(data).to have_key("converted")
+      expect(data).to have_key("original")
     end
   end
 end
