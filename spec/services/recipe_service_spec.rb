@@ -17,7 +17,7 @@ RSpec.describe RecipeService do
         data = RecipeService.get_recipe(url)
       end
     end
-      
+
     it 'should return data in the correct format' do
       expect(data).to be_a(Hash)
       expect(data).to have_key("converted")
@@ -30,7 +30,7 @@ RSpec.describe RecipeService do
   describe '503 Service Unavailable response' do
     before do
       allow(Net::HTTP).to receive(:post).and_raise(Errno::ENETUNREACH.new("Network is unreachable"))
-      data = RecipeService.get_recipe(url)  
+      data = RecipeService.get_recipe(url)
     end
 
     it 'should return data in the correct format' do

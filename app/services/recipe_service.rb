@@ -1,5 +1,5 @@
-class RecipeService def self.get_recipe(url) 
-api_endpoint = Rails.application.config.api_endpoint 
+class RecipeService def self.get_recipe(url)
+api_endpoint = Rails.application.config.api_endpoint
 uri = URI.parse(api_endpoint)
 
     begin
