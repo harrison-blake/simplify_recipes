@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - gunicorn
       Date:
-      - Fri, 10 Jan 2025 16:18:02 GMT
+      - Thu, 09 Jan 2025 20:26:13 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -214,7 +214,7 @@ http_interactions:
         165 degrees F (74 degrees C). \n\nDotdash Meredith Food Studios\n\n### Chef''s
         Notes\n\nUse high-quality prepared tomato sauce for a better result. You may
         substitute\npesto or dried Italian herbs of your choice for basil or omit
-        entirely.\n\nI Made It  Print\n\n10,584 home cooks made it!\n\n## Nutrition
+        entirely.\n\nI Made It  Print\n\n10,583 home cooks made it!\n\n## Nutrition
         Facts (per serving)\n\n471 | Calories  \n---|---  \n25g  | Fat  \n25g  | Carbs  \n42g  |
         Protein  \n  \nShow Full Nutrition Label Hide Full Nutrition Label\n\nNutrition
         Facts  \n---  \nServings Per Recipe 4  \nCalories 471  \n% Daily Value *  \nTotal
@@ -323,5 +323,5 @@ http_interactions:
         Accept All Cookies\n\n"}
 
         '
-  recorded_at: Fri, 10 Jan 2025 16:18:02 GMT
+  recorded_at: Thu, 09 Jan 2025 20:26:13 GMT
 recorded_with: VCR 6.3.1
