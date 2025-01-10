@@ -80,6 +80,7 @@ Rails.application.configure do
 
   # config.serve_static_assets = true
   config.assets.compile = false
+  config.assets.digest = true 
 
 
   # Enable DNS rebinding protection and other `Host` header attacks.
