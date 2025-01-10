@@ -6,3 +6,6 @@
 
 # Ignore environment secrets
 .env
+
+# Ignore precompiled assets
+/public/assets/**
