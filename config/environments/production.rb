@@ -79,7 +79,8 @@ Rails.application.configure do
   config.active_record.attributes_for_inspect = [ :id ]
 
   # This should usually be false only if your assets are precompiled
-  config.assets.compile = false 
+  config.serve_static_assets = true
+  config.assets.compile = true
 
 
   # Enable DNS rebinding protection and other `Host` header attacks.
