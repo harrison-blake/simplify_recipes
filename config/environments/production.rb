@@ -79,6 +79,7 @@ Rails.application.configure do
   config.active_record.attributes_for_inspect = [ :id ]
 
   # config.serve_static_assets = true
+  config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
   config.assets.compile = false
   config.assets.digest = true 
   config.serve_static_assets = true
