@@ -91,7 +91,6 @@ Rails.application.configure do
   #   "example.com",     # Allow requests from example.com
   #   /.*\.example\.com/ # Allow requests from subdomains like `www.example.com`
   # ]
-  # config.hosts << "simplify-web-9147d8b72c6d.herokuapp.com"
   config.hosts = [
     /.*\.herokuapp\.com/
   ]
