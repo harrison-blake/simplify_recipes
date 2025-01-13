@@ -9,5 +9,6 @@ build:
     RAILS_ENV: production
 
 run:
-  web:
+  web: |
     bundle exec rails assets:precompile
+    bundle exec puma -C config/puma.rb
