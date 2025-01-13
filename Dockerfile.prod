@@ -8,6 +8,3 @@ WORKDIR /usr/src/app
 RUN bundle install
 
 COPY . /usr/src/app/
-
-RUN RAILS_ENV=production bundle exec rails assets:precompile
-CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]

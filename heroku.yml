@@ -5,3 +5,10 @@ setup:
 build:
   docker:
     web: Dockerfile.prod
+  config:
+    RAILS_ENV: production
+
+run:
+  web:
+    bundle exec rails assets:precompile
+    bundle exec puma -C config/puma.rb
