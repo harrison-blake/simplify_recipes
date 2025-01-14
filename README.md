@@ -1,23 +1,18 @@
 # README
 
-A web app that takes in a recipe page url, calls the [simplify api](https://github.com/harrison-blake/simplify_api) which converts the html of the site to markdown and finally feeds it into gpt to extract the essential ingredients and cooking instructions.
+A website that takes in a recipe page url, removes all clutter and returns the ingredients, and cooking structions. 
+
+link to backend repo: [simplify api](https://github.com/harrison-blake/simplify_api)
 
 ### ⚡Tech Stack
 
 [![Skills](https://skillicons.dev/icons?i=python,flask,rails,ruby,postgres,docker,heroku)](https://skillicons.dev)</br>
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+- Rails 8.0.1
+- deployed to Heroku
+- test coverage with rspec
+- follows omakase-rubocop coding practices
+- CI/CD w/ heroku and github
+- postgresql as database
+- uses docker for development and deployment
+- user login functionality
