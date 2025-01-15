@@ -33,8 +33,8 @@ link to backend repo: [simplify api](https://github.com/harrison-blake/simplify_
 	- [ ] nav bar
 		- [x] create nav bar elements and style
   		- [ ] login page
-          	- [ ] sign up page
-          	- [ ] about page
+		- [ ] sign up page
+		- [ ] about page
 - [ ] change .env files to rails credentials
 - [ ] build ci/cd pipeline
 - [ ] add an image to the recipe page
