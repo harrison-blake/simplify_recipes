@@ -1,5 +1,7 @@
 # README
 
+[Simplify Recipes](https://simplify-recipes-2c38fd213859.herokuapp.com/)
+
 A website that takes in a recipe page url, removes all clutter and returns the ingredients, and cooking structions. 
 
 link to backend repo: [simplify api](https://github.com/harrison-blake/simplify_api)
