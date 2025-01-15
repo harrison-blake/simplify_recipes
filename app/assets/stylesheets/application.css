@@ -32,18 +32,21 @@ body {
 /*styling for navbar*/
 .nav_container {
   padding: 10px;
-  background-color: #f8f9fa;
 }
 
 .nav_items {
-  list-style-type: none; /* Removes bullet points */
-  margin: 0;
-  padding: 0;
   display: flex; /* Makes list items appear in a row */
   align-items: center; /* Vertically centers items */
+  list-style-type: none;
+}
+
+.nav_items li a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set text color to black */
+  padding-right: 2rem;
 }
 
 .nav_items li a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Keep underline removed on hover */
+  color: black; /* Keep text color black on hover */
 }
-
