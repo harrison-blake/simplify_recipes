@@ -28,3 +28,22 @@ body {
 .col-head {
   text-align: center;
 }
+
+/*styling for navbar*/
+.nav_container {
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.nav_items {
+  list-style-type: none; /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Makes list items appear in a row */
+  align-items: center; /* Vertically centers items */
+}
+
+.nav_items li a:hover {
+  text-decoration: underline;
+}
+
