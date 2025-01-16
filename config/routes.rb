@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :recipes, only: %i[ create show ]
 
   get "login", to: "sessions#login"
+  get "about", to: "about#index"
 
   get "up" => "rails/health#show", as: :rails_health_check
 end
