@@ -11,4 +11,10 @@ class SessionsController < ApplicationController
       		redirect_to root_path, flash: { success: 'Logged in successfully' }
 		end
 	end
+
+	def logout
+		session.delete(:user_id)
+
+		redirect_to root_path, flash: { success: 'Logged out succesfully' }
+	end
 end
