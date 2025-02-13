@@ -1,1 +1,15 @@
 <h2>Login Page</h2>
+<div>
+  <%= form_with model: User, url: sessions_path, method: :post, local: true do |f| %>
+    <div>
+      <%= f.label :email %><br>
+      <%= f.text_field :email %><br>
+      <%= f.label :password %><br>
+      <%= f.password_field :password %><br>
+    </div>
+
+    <div>
+      <%= f.submit "Login" %>
+    </div>
+  <% end %>
+</div>
