@@ -30,11 +30,11 @@ link to backend repo: [simplify api](https://github.com/harrison-blake/simplify_
 - [ ] add user / login
 	- [ ] if user is logged in then you can save recipes
 	- [ ] cookies?
-	- [ ] nav bar
+	- [x] nav bar
 		- [x] create nav bar elements and style
-  		- [ ] login page
-		- [ ] sign up page
-		- [ ] about page
+  		- [x] login page
+		- [x] sign up page
+		- [x] about page
 - [ ] change .env files to rails credentials
-- [ ] build ci/cd pipeline
+- [x] build ci/cd pipeline
 - [ ] add an image to the recipe page
